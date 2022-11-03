@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+nav {
+  padding: 21px 0rem;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 0.5rem 0rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #fefefe;
+}
+
+.nav-container {
+  margin: 0 auto;
+  max-width: 1165px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  z-index: 2;
+}
+
+.nav-logo-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 180px;
+  height: 40px;
+  margin-right: 45px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.nav-list a {
+  color: #353535;
+  line-height: 27.2px;
+  font-size: 16.5px;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+  visibility: visible;
+}
+
+.dropdown-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  cursor: pointer;
+  position: absolute;
+  margin-top: 2px;
+  left: -145px;
+  width: 350px;
+  -webkit-box-shadow: 2px -3px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 2px -3px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  -webkit-transition: display 0.2s;
+  -moz-transition: display 0.2s;
+  transition: display 0.2s;
+  visibility: hidden;
+}
+
+.dropdown-menu a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+#dropdown-menu-item1:hover {
+  background-color: rgb(241, 243, 244);
+  border-radius: 10px 0px 0px 0px;
+}
+
+#dropdown-menu-item2:hover {
+  background-color: rgb(241, 243, 244);
+  border-radius: 0px 10px 0px 0px;
+}
+
+#dropdown-menu-item3:hover {
+  background-color: rgb(241, 243, 244);
+  border-radius: 0px 0px 0px 10px;
+}
+
+#dropdown-menu-item4:hover {
+  background-color: rgb(241, 243, 244);
+  border-radius: 0px 0px 10px 0px;
+}
+
+.dropdown-menu img {
+  width: 25px;
+  height: 25px;
+}
+
+.dropdown-menu-item {
+  padding: 1.2rem 1.2rem 1.2rem 0rem;
+}
+
+#dropdown-menu-item3 {
+  padding-left: 1.2rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+#btn-primary {
+  background-color: #0c1825;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16.5px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  padding: 16px 22px;
+  -webkit-transition: background-color 0.8s;
+  -moz-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+}
+
+#btn-primary:hover {
+  background-color: #0d60d8 !important;
+}
+
+#btn-secondary {
+  border-radius: 12px;
+  color: #0c1825 !important;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  font-size: 16.5px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  padding: 16px 22px;
+  -webkit-transition: border 0.8s, color 0.8s;
+  -moz-transition: border 0.8s, color 0.8s;
+  transition: border 0.8s, color 0.8s;
+}
+
+#btn-secondary:hover {
+  color: #0d60d8 !important;
+  border: 1px solid #0d60d8;
+}
+
+.toggle-nav-container {
+  margin-right: 2rem;
+}
+
+#toggle-open {
+  width: 28px;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-container {
+    padding: 0rem 2rem;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .body {
+    text-align: center;
+  }
+  .nav-container {
+    padding: 0rem 1rem;
+    position: relative;
+  }
+  .nav-logo-list {
+    padding-left: 2rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background-color: #fff;
+    display: block;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  #toggle-open {
+    display: block;
+  }
+  .toggle-nav-container {
+    display: block;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
