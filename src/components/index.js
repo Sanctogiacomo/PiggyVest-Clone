@@ -6,5 +6,5 @@ import Investify from "./Investify";
 import Saver from "./Saver";
 import Testimonial from "./Testimonial";
 import Featured from "./Featured";
-import Footer from "./footer";
+import Footer from "./Footer";
 export {Navbar, Hero, Security, SavingWays, Investify, Saver, Testimonial, Featured, Footer};
