@@ -1,0 +1,56 @@
+.container-testimonial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 10rem auto;
+  max-width: 1165px;
+  position: relative;
+}
+
+.testimonial-content {
+  flex: 0 0 45%;
+  max-width: 0 0 45%;
+}
+
+.testimonial-aside {
+  flex: 0 0 55%;
+  max-width: 0 0 55%;
+}
+
+.testimonial-aside h4 {
+  font-size: 33px;
+  line-height: 41.21px;
+  margin-bottom: 1rem;
+}
+
+#testimonial-aside-p {
+  margin-bottom: 3rem;
+  font-family: DM Sans, sans-serif !important;
+  color: #353535;
+  line-height: 27.2px;
+  font-size: 16.5px;
+  padding-right: 15rem;
+}
+
+.testimonial-btn-group2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.btn-applestore, .btn-playstore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+  border: 1px solid rgb(214, 213, 213);
+  gap: 8px;
+  font-size: 14px;
+  padding: 12px 14px !important;
+  border-radius: 12px;
+  color: #0c1825 !important;
+}/*# sourceMappingURL=Testimonial.css.map */
