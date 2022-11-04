@@ -1,0 +1,134 @@
+
+footer{
+    margin: 30px auto;
+    max-width: 1165px;
+    padding:1rem 0rem;
+    font-size: 12.82px;
+    font-family: 'U8'!important;
+}
+
+.footer-top{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+    gap:3rem;
+    flex-wrap: wrap;
+}
+
+
+.footer-top-text{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+    gap: 10rem;
+}
+.footer-text-section p{
+        /* padding: 80px 16px 50px; */
+        font-family: 'U8'!important;
+        margin-bottom: 10px;
+        color: #0c1825;
+        line-height: 27.2px;
+        font-weight: 700;
+        font-size: 12.82px;
+}
+
+.footer-top-text a{
+    margin-bottom: 4px;
+    color: #0c1825;
+    font-size: 12.82px;
+    font-weight: 500;
+}
+
+.logo-footer{
+    width: 180px;
+    height: 40px;
+}
+
+.footer-images{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    -moz-box-flex: 0;
+    flex: 0 0 22.5%;
+    max-width: 0 0 22.5
+}
+
+#compliance-image{
+    width:150px;
+        /* border: 2px solid whitesmoke; */
+        border-radius: 10px;
+        padding: 10px;
+        margin: 1.5rem auto;
+
+}
+
+.footer-text-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align:left;
+    line-height: 27.2px;
+}
+
+.footer-text-1{
+   font-weight: 500;
+}
+
+.footer-top-info{
+    margin-left: 5rem;
+}
+
+.footer-top-info p{
+ text-align: right;
+ line-height: 27.2px;
+}
+.footer-bottom{
+    max-width: 745px;
+    margin:0 auto;
+    margin-top: 3rem;
+}
+
+.footer-bottom p{
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 0 1rem;
+    line-height: 27.2px;
+}
+
+.footer-bottom a p{
+text-align: center;
+color: #083e9e;
+    font-size: 12.82px;
+    font-weight: 500;
+
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.social-icon-items{
+    width: 24px;
+    -webkit-transition: margin .5s;
+    -moz-transition: margin .5s;
+    transition: margin .5s;
+    line-height: 21px;
+}
+
+.social-icon-items:hover{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+

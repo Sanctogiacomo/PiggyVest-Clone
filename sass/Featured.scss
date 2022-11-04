@@ -1,0 +1,40 @@
+.container-featured{
+    background: #f9f9f9;
+    padding: 65px 16px;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem auto;
+   
+    gap:15rem;
+    justify-items: center;
+    justify-content:center;
+    align-items: center;
+}
+
+.featured-textbox{
+    justify-content: flex-start;
+}
+
+.container-featured h4{
+    font-family: 'U8'!important;
+    font-weight: 700;
+    color: #0c1825;
+    font-size: 33px;
+    line-height: 41.21px;
+}
+
+.featured-images{
+    padding-right:4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.featured-images img{
+    width:150px;
+}
+
+.featured-images img:nth-last-of-type(even)
+{
+    margin:0 3rem;
+}
