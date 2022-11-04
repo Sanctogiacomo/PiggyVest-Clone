@@ -1,13 +1,12 @@
 ## DEVCAREER LAPTOP4DEV COHORT 3 👋
-### TEAM 3 (MOVIE API CHALLENGE)
+### TEAM 3 (PIGGYVEST CLONE CHALLENGE)
 
-### A MOVIE API WEBPAGE
+### A CLONE OF PIGGYVEST WEBSITE
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [Author](#author)
 
@@ -19,23 +18,16 @@
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- Click on any of the movie title or picture and be taken to summary/synoptic/Movie Details page
-- Click on the arrow back button on the movie details page and be taken to the home page
-- Use the dark/light mode feature
+- Access the different state of the page
+- Have a very lovely user experience.
+- Access the social media pages
 - View the different state of the page
 - Subscribe to the page
-
-### Screenshot
-- Desktop View
-![Desktop version](./images/Desktop-Design-Movie-App.png);
-
-- Mobile View
-![Mobile version](./images/Mobile-Design-Movie-App.png);
 
 
 
 ### Links
-- Live Site URL: [CLICK TO VIEW THE LIVE SITE ON NETLIFY](https://cjay-peppy.netlify.app/)
+- Live Site URL: [CLICK TO VIEW THE LIVE SITE ON NETLIFY](https://piggyvesting.netlify.app/)
 
 
 ## Author
