@@ -1,0 +1,385 @@
+@import url(//db.onlinewebfonts.com/c/7017698b5c5a2cc397cd3b0c0984d76f?family=U8);
+@import './Navbar.scss';
+
+@mixin  flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 65px;
+    line-height: 82.42px;
+    font-family: 'U8'!important;
+    font-weight: 700;
+    color: #0c1825;
+    z-index:-4;
+    animation: 0.9s ease-out 0s 1 downup;
+    
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    padding: 10rem 6rem 5rem 6rem;
+    z-index: -4;
+}
+
+.hero-container-summary{
+    padding-right: 11rem;
+    place-self: center;
+    place-items: center;
+    place-content: centre;
+}
+
+.summary-text p{
+      line-height: 27.2px;
+      color: #353535;
+      padding-right: 2rem;
+      animation: 1s ease-out 0s 1 downup;
+  
+}
+.hero-container-summary p{
+    color: #353535;
+}
+.button-group1{
+    margin-top: 3rem;
+}
+
+.button-group2{
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem;
+}
+
+#btn-applestore, #btn-playstore{
+    @include btn;
+    @include flexrow;
+    gap: 8px;
+    font-size: 14px;
+    padding: 12px 14px !important;
+    color: #0c1825!important;
+    margin-top: 3rem;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary-hero{
+    background-color: $primary-btn-bg-color;
+    border-radius: 12px;
+    color:$white;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    padding: 16px 22px;
+    -webkit-transition: background-color .8s;
+    -moz-transition: background-color .8s;
+    transition: background-color .8s;
+}
+
+.btn-primary-hero:hover{
+    background-color: #0d60d8!important;
+}
+
+#btn-applestore:hover{
+    margin-top: 2.5rem;
+    border: 1px solid #bbb;
+}
+#btn-playstore:hover{
+    margin-top: 2.5rem;
+    border: 1px solid #bbb;
+}
+
+.hero-container-aside{
+position: relative;
+width: 400px;
+
+}
+
+.aside-content{
+@include flexrow;
+width: inherit;
+}
+
+#aside-img{
+    position: absolute;
+    left: -30px;
+}
+
+#aside-card1{
+    position: absolute;
+    width: 215px;
+    left: -32%;
+    top: 170px;
+}
+
+#aside-card2{
+    position: absolute;
+    width: 215px;
+    transform: translate(0px, 0px);
+    left: 57%;
+    top: 400px;
+}
+
+#cross{
+    position: absolute;
+    top: 0px;
+    left: -65px;
+}
+
+
+#dot{
+    position: absolute;
+    top:350px;
+    left: -45px;
+}
+
+#circle{
+    position: absolute;
+    top:170px;
+    right:48px;
+    animation: 0.8s ease-out 0s 1 downupmiddle;
+}
+
+@keyframes downup {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes downupmiddle {
+   from{
+      transform: translateY(60%);
+    }
+    100% {
+      transform: translateY(10%);
+    }
+  }
+
+  @media only screen and (min-width:1440px){
+    .hero-container{
+        width: 1300px;
+        margin: 0 auto;
+    }
+       
+  }
+
+  @media only screen and (max-width:1200px){
+    .hero-container{
+        padding: 9rem 2rem;
+    }
+}
+
+  @media only screen and (max-width:996px){
+    .hero-container{
+        padding: 10rem 0rem 3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+        padding-bottom: 10px;
+        font-family: 'U8'!important;
+    }
+   
+  
+   .button-group2{
+    justify-content: center;
+    padding-bottom: 4rem;
+   }
+
+
+    
+.hero-container-summary{
+    margin: 0 auto;
+    padding-right: 0rem;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+
+.summary-text p{
+    padding-right: 0rem;
+    padding:0rem 2rem;
+
+}
+
+
+.hero-container-aside{
+    margin: 3rem auto;
+}
+
+
+.aside-content{
+    @include flexrow;
+    margin: 0rem auto;
+    }
+    
+  }
+
+
+  @media only screen and (max-width:650px){
+    .hero-container-aside{
+        width: 250px;
+        margin: 3rem auto;
+    }
+
+    #aside-rect{
+        width: 300px;
+    }
+
+    
+    #aside-img{
+        position: absolute;
+        left: -30px;
+        width: 300px;
+    }
+    
+    #aside-card1{
+        position: absolute;
+        width: 180px;
+        left: -32%;
+        top: 170px;
+    }
+    
+    #aside-card2{
+        position: absolute;
+        width: 180px;
+        transform: translate(0px, 0px);
+        left: 57%;
+        top: 400px;
+    }
+    
+    #cross{
+        position: absolute;
+        top: 0px;
+        left: -65px;
+    }
+    
+    
+    #dot{
+        position: absolute;
+        top:350px;
+        left: -45px;
+    }
+    
+    #circle{
+        position: absolute;
+        top:170px;
+        right:48px;
+        animation: 0.8s ease-out 0s 1 downupmiddle;
+    }
+    
+    
+  }
+
+  @media only screen and (max-width:500px) {
+
+
+        
+    h1 {
+        font-size: 48px;
+        line-height: 54px;
+        padding-bottom: 10px;
+        font-family: 'U8'!important;
+    }
+   
+    .summary-text p{
+        padding-right: 0rem;
+        padding:0rem 1rem;
+    
+    }
+    
+    
+  }
+ 
+  @media only screen and (max-width:400px){
+
+    .hero-container{
+        width: 100%;        
+    }
+    .summary-text p{
+        padding-right: 0rem;
+        padding:0rem;
+    
+    }
+        
+    h1 {
+        font-size: 40px;
+    }
+   
+    .btn-primary-hero{
+        @include flexrow;
+    }
+
+.button-group2{
+    flex-direction: column;
+}
+
+#btn-applestore{
+    gap: 8px;
+    margin-top: 3rem;
+}
+
+#btn-playstore{
+    margin-top:0rem;
+    margin:0 auto;
+}
+
+#btn-applestore:hover{
+    margin-top: 1rem;
+}
+#btn-playstore:hover{
+    margin-top: 1rem;
+}
+    .hero-container-aside{
+        padding-left: 1rem;
+    }
+
+    #aside-img{
+        position: absolute;
+        left: -20px;
+        width: 300px;
+    }
+
+    #aside-card1{
+        position: absolute;
+        width: 180px;
+        left: -30%;
+        top: 150px;
+    }
+    
+    #aside-card2{
+        position: absolute;
+        width: 180px;
+        left: 50%;
+        top: 350px;
+    }
+    
+    #cross{
+       position: absolute;
+        top: 0px;
+        left: -55px;
+    }
+    
+    
+    #dot{
+        position: absolute;
+        top:350px;
+        left: -35px;
+    }
+}
