@@ -613,7 +613,10 @@ h1 {
     padding: 0rem;
   }
   h1 {
-    font-size: 40px;
+    font-size: 45px;
+    line-height: 55px;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .btn-primary-hero {
     display: flex;
