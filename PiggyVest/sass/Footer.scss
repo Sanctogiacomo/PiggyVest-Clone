@@ -197,7 +197,7 @@ color: #083e9e;
     flex-flow: wrap;
     justify-content: left;
     justify-items: left;
-    gap: 3rem;
+    gap: 4rem;
     margin-bottom: 3rem;
 }
 
@@ -211,4 +211,19 @@ color: #083e9e;
     margin:0 auto;
     margin-top: 1rem;
 }
+}
+
+
+@media only screen and (max-width:400px){
+    .footer-images{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    }
+
+    
 }
