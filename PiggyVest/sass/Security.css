@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,$font-weight-sm;0,700;1,400;1,$font-weight-sm;1,700&display=swap');
 #security-image {
   max-width: 100px!important;
   max-width: 256px;
@@ -11,6 +12,7 @@
 }
 
 .security-container{
+  font-family: 'DM Sans', sans-serif!important;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -85,5 +87,15 @@
 
   .security-text h4{
          font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .security-text p{
+    font-size: 15.5px;
+  }
+
+  .security-container{
+    padding-bottom: 2rem;
   }
 }

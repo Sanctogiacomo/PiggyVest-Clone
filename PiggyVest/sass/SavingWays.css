@@ -282,6 +282,13 @@ margin-left: 2rem;
 
  }
 
+ @media only screen and (max-width: 480px){
+  .savingway-aside1 h3 {
+    font-size: 28px;
+    line-height: 38px;
+}
+}
+
 
  
  @media only screen and (max-width: 400px) {
@@ -290,5 +297,9 @@ margin-left: 2rem;
       height: 370px;
       width: 330px;
    }
+.savingways-container{
+   margin-bottom: 0rem;
+   padding-bottom: 16px;
+}
 
  }

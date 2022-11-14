@@ -142,3 +142,26 @@ margin-top:1.5rem;
     }
 }
 
+@media only screen and (max-width: 480px){
+    .investify-container{
+        margin-bottom: 2rem;
+    }
+ .investify-text h2 {
+    font-size: 31px!important;
+    line-height: 39px;
+}
+}
+
+
+@media only screen and (max-width:375px){
+    #investify-circle{
+        position: absolute;
+        top:250px;
+        z-index: -4;
+        margin-left: -290px;
+    }
+    .investify-container{
+        padding-top: 0rem;
+    }
+}
+

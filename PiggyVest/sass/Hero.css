@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/7017698b5c5a2cc397cd3b0c0984d76f?family=U8);
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,$font-weight-sm;0,700;1,400;1,$font-weight-sm;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,$font-weight-sm;0,700;1,400;1,$font-weight-sm;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@
 }
 
 .shadow {
-  box-shadow: 0 0 0.3rem 0rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.5rem 0rem rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -210,7 +211,7 @@
   }
   .nav-container {
     margin: 0rem auto;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
   }
   .disappear {
     background-color: #ffffff;
@@ -335,6 +336,7 @@ h1 {
 }
 
 .hero-container {
+  font-family: "DM Sans", sans-serif !important;
   display: grid;
   grid-template-columns: 1fr 40%;
   padding: 10rem 6rem 5rem 6rem;
@@ -351,6 +353,7 @@ h1 {
 .summary-text p {
   line-height: 27.2px;
   color: #353535;
+  font-family: "DM Sans", sans-serif !important;
   padding-right: 2rem;
   animation: 1s ease-out 0s 1 downup;
 }
@@ -603,6 +606,7 @@ h1 {
 @media only screen and (max-width: 400px) {
   .hero-container {
     width: 100%;
+    padding-bottom: 0rem;
   }
   .summary-text p {
     padding-right: 0rem;
@@ -637,16 +641,17 @@ h1 {
   }
   .hero-container-aside {
     padding-left: 1rem;
+    margin-top: 0rem;
   }
   #aside-img {
     position: absolute;
     left: -20px;
-    width: 300px;
+    width: 280px;
   }
   #aside-card1 {
     position: absolute;
     width: 180px;
-    left: -30%;
+    left: -25%;
     top: 150px;
   }
   #aside-card2 {
@@ -657,8 +662,8 @@ h1 {
   }
   #cross {
     position: absolute;
-    top: 0px;
-    left: -55px;
+    top: 5px;
+    left: -45px;
   }
   #dot {
     position: absolute;
